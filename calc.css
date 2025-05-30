@@ -1,0 +1,43 @@
+.box{
+  height: 500px;
+  width: 300px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container{
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center; 
+}
+.display{
+  height: 90px;
+  border: 2px solid black;
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 12px;
+  flex-basis: 90%;
+  font-size: 32px;
+  align-content: center;
+  text-align: end;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.func{
+  display: flex;
+  flex-direction: column;
+}
+.buttons{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 8px 0px 8px 0px;
+}
+.buttons>button{
+  height: 50px;
+  width: 90px;
+  font-size: 22px;
+}
