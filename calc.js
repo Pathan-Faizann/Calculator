@@ -39,8 +39,9 @@ buttons.forEach((button) => {
         
       }
       else if(operator === "C"){
-       
+        currentInput = "";
         result = "";
+        display.innerText = '0';
         
       }
       console.log(operator)
