@@ -38,7 +38,7 @@ buttons.forEach((button) => {
         result = previousInput / parseFloat(currentInput);
         
       }
-      else if(operator === "C"){
+      else if(value === "C"){
         currentInput = "";
         result = "";
         display.innerText = '0';
