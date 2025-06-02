@@ -5,7 +5,7 @@ let previousInput = null;
 let operator = null;
 
 
-let buttons = document.querySelectorAll('.buttons button');
+let buttons = document.querySelectorAll('.buttons button,.func button');
 buttons.forEach((button) => {
   button.addEventListener('click',()=>{
     const value = button.value;
