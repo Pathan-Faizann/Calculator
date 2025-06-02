@@ -8,13 +8,13 @@ let operator = null;
 let buttons = document.querySelectorAll('.buttons button,.func button');
 buttons.forEach((button) => {
   button.addEventListener('click',()=>{
-    const value = button.innerText;
+    const value = button.value;
     console.log(value.charCodeAt())
     if(!isNaN(value)){
       currentInput+= value;
       display.innerText = currentInput;
     }
-    else if(value === "+" || value ==="-" || value ==="x"|| value ==="÷"){
+    else if(value === "+" || value ==="-" || value ==="x"|| value ==="/"){
       operator = value;
       previousInput = parseFloat(currentInput);
       currentInput = '';
@@ -33,7 +33,7 @@ buttons.forEach((button) => {
       else if(operator === "x"){
         result = previousInput * parseFloat(currentInput)
       }
-      else if(operator === "÷"){
+      else if(operator === "/"){
         console.log("success");
         result = previousInput / parseFloat(currentInput);
         
