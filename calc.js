@@ -14,7 +14,7 @@ buttons.forEach((button) => {
       currentInput+= value;
       display.innerText = currentInput;
     }
-    else if(value === "+" || value ==="-" || value ==="x"|| value ==="/"|| value ==="C"){
+    else if(value === "+" || value ==="-" || value ==="x"|| value ==="/"){
       operator = value;
       previousInput = parseFloat(currentInput);
       currentInput = '';
