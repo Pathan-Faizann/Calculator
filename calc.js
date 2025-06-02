@@ -33,7 +33,7 @@ buttons.forEach((button) => {
       else if(operator === "x"){
         result = previousInput * parseFloat(currentInput)
       }
-      else if(operator === "/"){
+      else if(operator.value === "/"){
         console.log("success");
         result = previousInput / parseFloat(currentInput);
         
