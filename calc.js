@@ -3,6 +3,11 @@ let display = document.querySelector(".display");
 let currentInput = "";
 let previousInput = null;
 let operator = null;
+let c = document.querySelector(".c");
+c.addEventListener("click",()=>{
+  display.innerText="";
+  currentInput = "";
+})
 
 
 let buttons = document.querySelectorAll('.buttons button,.func button');
