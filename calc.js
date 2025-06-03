@@ -10,6 +10,12 @@ buttons.forEach((button) => {
   button.addEventListener('click',()=>{
     const value = button.value;
     console.log(value.charCodeAt())
+    if(value === "C"){
+        currentInput = "";
+        result = "";
+        display.innerText = '0';
+        
+      }
     if(!isNaN(value)){
       currentInput+= value;
       display.innerText = currentInput;
@@ -20,12 +26,7 @@ buttons.forEach((button) => {
       currentInput = '';
       // let result = currentInput + previousInput;
     }
-      if(value === "C"){
-        currentInput = "";
-        result = "";
-        display.innerText = '0';
-        
-      }
+  
     else if(value === "="){
       if(operator && previousInput !== null && currentInput!== ""){
           let result;
