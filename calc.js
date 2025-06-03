@@ -20,6 +20,12 @@ buttons.forEach((button) => {
       currentInput = '';
       // let result = currentInput + previousInput;
     }
+      if(value === "C"){
+        currentInput = "";
+        result = "";
+        display.innerText = '0';
+        
+      }
     else if(value === "="){
       if(operator && previousInput !== null && currentInput!== ""){
           let result;
@@ -38,12 +44,7 @@ buttons.forEach((button) => {
         result = previousInput / parseFloat(currentInput);
         
       }
-      else if(value === "C"){
-        currentInput = "";
-        result = "";
-        display.innerText = '0';
-        
-      }
+      
       console.log(operator)
       display.innerText = result;
       currentInput = result.toString();
